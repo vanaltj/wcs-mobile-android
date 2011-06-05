@@ -16,4 +16,10 @@
     <string name="serverLabel">Server:</string>
     <string name="serverEditText">server</string>
     <string name="loginButton">Login</string>
+    <string name="gender_prompt">Select a gender</string>
+    <string-array name="gender">
+        <item>Female</item>
+        <item>Male</item>
+        <item>Unidentified</item>
+    </string-array>
 </resources>

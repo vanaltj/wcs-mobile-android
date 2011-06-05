@@ -20,10 +20,16 @@ import android.app.Activity;
 import android.os.Bundle;
 
 public class ConfirmAndSend extends Activity {
-
+	@Override
 	public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.confirm_send);
+	    super.onCreate(savedInstanceState);
+	    setContentView(R.layout.main);
+
+	    Spinner spinner = (Spinner) findViewById(R.id.spinner);
+	    ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
+	            this, R.array.planets_array, android.R.layout.simple_spinner_item);
+	    adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+	    spinner.setAdapter(adapter);
     }
 	
 }
