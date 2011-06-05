@@ -9,4 +9,10 @@
     <string name="wound_len">Indicate Wound Length</string>
     <string name="wound_wid">Indicate Wound Width</string>
     <string name="confirm_send">Confirm and Send</string>
+    <string name="userNameLabel">User Name:</string>
+    <string name="userNameEditText">username</string>
+    <string name="passwordLabel">Password:</string>
+    <string name="passwordEditText">password</string>
+    <string name="serverLabel">Server:</string>
+    <string name="serverEditText">server</string>
 </resources>
