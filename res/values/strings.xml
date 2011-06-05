@@ -2,4 +2,11 @@
 <resources>
     <string name="hello">Hello World, Main!</string>
     <string name="app_name">WCS</string>
+    <string name="patient_info">Patient Info</string>
+    <string name="loc_select">Select Wound Location</string>
+    <string name="image_cap">Take Wound Image</string>
+    <string name="ref_obj">Indicate Reference Object Location</string>
+    <string name="wound_len">Indicate Wound Length</string>
+    <string name="wound_wid">Indicate Wound Width</string>
+    <string name="confirm_send">Confirm and Send</string>
 </resources>
