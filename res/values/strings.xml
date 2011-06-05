@@ -15,4 +15,5 @@
     <string name="passwordEditText">password</string>
     <string name="serverLabel">Server:</string>
     <string name="serverEditText">server</string>
+    <string name="loginButton">Login</string>
 </resources>
