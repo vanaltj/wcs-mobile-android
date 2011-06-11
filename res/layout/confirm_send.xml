@@ -19,9 +19,20 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     >
-<TextView  
-    android:layout_width="fill_parent" 
-    android:layout_height="wrap_content" 
-    android:text="@string/hello"
-    />
+    <TextView
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:text="@string/hello"
+        />
+    <Spinner android:id="@+id/agespin"
+        android:entries="@array/ages"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/age_prompt"
+        />
+    <Button android:id="@+id/sendButton"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:text="@string/sendButton"
+	    />
 </LinearLayout>

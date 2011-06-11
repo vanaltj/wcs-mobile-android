@@ -4,60 +4,60 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     >
-<TextView  
-    android:layout_width="fill_parent" 
-    android:layout_height="wrap_content" 
-    android:text="@string/hello"
-    />
-<RelativeLayout
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    >
-<TextView
-	android:id="@+id/userLabel"
-	android:text="@string/userNameLabel"
-	android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    />
-<EditText
-    android:layout_toRightOf="@id/userLabel"
-    android:id="@+id/userField"
-    android:text="@string/userNameEditText"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    />
-<TextView
-	android:id="@+id/passLabel"
-	android:text="@string/passwordLabel"
-	android:layout_below="@id/userLabel"
-	android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    />
-<EditText
-    android:layout_toRightOf="@+id/passLabel"
-    android:id="@+id/passwordField"
-    android:text="@string/passwordEditText"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    />
-<TextView
-    android:id="@+id/serverLabel"
-    android:text="@string/serverLabel"
-    android:layout_below="@id/passLabel"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    />
-<EditText
-    android:layout_toRightOf="@id/serverLabel"
-    android:id="@+id/serverField"
-    android:text="@string/serverEditText"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    />
-<Button android:id="@+id/loginButton"
-    android:layout_below="@id/serverField"
-    android:layout_height="wrap_content"
-    android:layout_width="wrap_content"
-    android:text="@string/loginButton"></Button>
-</RelativeLayout>
+	<TextView  
+	    android:layout_width="fill_parent" 
+	    android:layout_height="wrap_content" 
+	    android:text="@string/hello"
+	    />
+	<RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    >
+	<TextView
+		android:id="@+id/userLabel"
+		android:text="@string/userNameLabel"
+		android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    />
+	<EditText
+	    android:layout_toRightOf="@id/userLabel"
+	    android:id="@+id/userField"
+	    android:text="@string/userNameEditText"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    />
+	<TextView
+		android:id="@+id/passLabel"
+		android:text="@string/passwordLabel"
+		android:layout_below="@id/userLabel"
+		android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    />
+	<EditText
+	    android:layout_toRightOf="@+id/passLabel"
+	    android:id="@+id/passwordField"
+	    android:text="@string/passwordEditText"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    />
+	<TextView
+	    android:id="@+id/serverLabel"
+	    android:text="@string/serverLabel"
+	    android:layout_below="@id/passLabel"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    />
+	<EditText
+	    android:layout_toRightOf="@id/serverLabel"
+	    android:id="@+id/serverField"
+	    android:text="@string/serverEditText"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    />
+	<Button android:id="@+id/loginButton"
+	    android:layout_below="@id/serverField"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:text="@string/loginButton"></Button>
+	</RelativeLayout>
 </LinearLayout>

@@ -20,6 +20,7 @@ import android.os.Bundle;
 
 public class EnterReferenceObject extends EnterPointPair {
 	
+    @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.ref_obj);

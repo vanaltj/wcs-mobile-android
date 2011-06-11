@@ -18,12 +18,36 @@ package org.rhok.wcs.android;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.EditText;
 
-public class Login extends Activity {
+public class Login extends Activity implements OnClickListener {
+    private EditText uf, pf, sf;
+    private Button lb;
+
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
+        
+        uf = (EditText) findViewById(R.id.userField);
+        pf = (EditText) findViewById(R.id.passwordField);
+        sf = (EditText) findViewById(R.id.serverField);
+        lb = (Button) findViewById(R.id.loginButton);
+        
+        lb.setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View v) {
+        if (v.equals(lb)) {
+            // TODO Check valid user/pw/server input
+            // TODO Attempt login with server
+            // TODO proceed to next activity.
+        }
+        
     }
 }

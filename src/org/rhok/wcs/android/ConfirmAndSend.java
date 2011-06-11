@@ -18,18 +18,34 @@ package org.rhok.wcs.android;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.Spinner;
 
-public class ConfirmAndSend extends Activity {
+public class ConfirmAndSend extends Activity implements OnClickListener {
+    private Spinner af;
+    private Button sb;
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 	    super.onCreate(savedInstanceState);
-	    setContentView(R.layout.main);
+	    setContentView(R.layout.confirm_send);
 
-	    Spinner spinner = (Spinner) findViewById(R.id.spinner);
-	    ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
-	            this, R.array.planets_array, android.R.layout.simple_spinner_item);
-	    adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-	    spinner.setAdapter(adapter);
+	    af = (Spinner) findViewById(R.id.agespin);
+	    
+	    sb = (Button) findViewById(R.id.sendButton);
+	    sb.setOnClickListener(this);
+	    //ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(
+	    //        this, R.array.planets_array, android.R.layout.simple_spinner_item);
+	    //adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+	    //spinner.setAdapter(adapter);
+    }
+    @Override
+    public void onClick(View v) {
+        if (v.equals(sb)) {
+            // TODO Send wound info to server.
+        }
+        
     }
 	
 }

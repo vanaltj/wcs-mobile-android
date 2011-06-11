@@ -20,7 +20,8 @@ import android.os.Bundle;
 
 public class EnterWoundLength extends EnterPointPair {
 
-	public void onCreate(Bundle savedInstanceState) {
+	@Override
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.wound_len);
     }

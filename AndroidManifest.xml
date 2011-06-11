@@ -16,6 +16,8 @@
         <activity android:name="PatientInfoForm"
                   android:label="@string/patient_info">
         </activity>
-
+        <activity android:name="LocationSelect"
+                  android:label="@string/loc_select">
+        </activity>
     </application>
 </manifest>
