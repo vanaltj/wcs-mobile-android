@@ -40,7 +40,7 @@ public class ConfirmAndSend extends Activity implements OnClickListener {
 	    //adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 	    //spinner.setAdapter(adapter);
     }
-    @Override
+	
     public void onClick(View v) {
         if (v.equals(sb)) {
             // TODO Send wound info to server.

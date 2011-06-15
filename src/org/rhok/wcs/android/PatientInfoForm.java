@@ -17,13 +17,36 @@
 package org.rhok.wcs.android;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 
 public class PatientInfoForm extends Activity {
 	/** Called when the activity is first created. */
+	private Button _nextButton;
+	private Button _previousButton;
+	
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.pinfo);
+        
+        _nextButton = (Button) findViewById(R.id.button_next);
+        
+        _nextButton.setOnClickListener(_nextListener);
     }
+    
+    /////////////////////
+    // CLICK LISTENERS
+    /////////////////////
+    OnClickListener _nextListener = new OnClickListener()
+    {
+    	public void onClick(View view)
+    	{
+    		Intent intent = new Intent(PatientInfoForm.this, LocationSelect.class);
+    		PatientInfoForm.this.startActivity(intent);
+    	}
+    };
 }

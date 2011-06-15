@@ -17,6 +17,7 @@
 package org.rhok.wcs.android;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -33,20 +34,22 @@ public class Login extends Activity implements OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login);
         
-        uf = (EditText) findViewById(R.id.userField);
-        pf = (EditText) findViewById(R.id.passwordField);
-        sf = (EditText) findViewById(R.id.serverField);
-        lb = (Button) findViewById(R.id.loginButton);
+        uf = (EditText) findViewById(R.id.user_field);
+        pf = (EditText) findViewById(R.id.pass_field);
+        sf = (EditText) findViewById(R.id.server_field);
+        lb = (Button) findViewById(R.id.login_button);
         
         lb.setOnClickListener(this);
     }
 
-    @Override
     public void onClick(View v) {
         if (v.equals(lb)) {
             // TODO Check valid user/pw/server input
             // TODO Attempt login with server
             // TODO proceed to next activity.
+        	
+        	Intent intent = new Intent(this, PatientInfoForm.class);
+        	startActivity(intent);
         }
         
     }
